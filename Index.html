@@ -1,49 +1,53 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telegram Mini App</title>
+    <title>MiniMonde007Bot</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
+        // Initialize Telegram Mini App
         let tg = window.Telegram.WebApp;
-    tg.expand();  // Expands the app to full size
-    console.log("Telegram Mini-App initialized.");
-</script>
-     body {
-            text-align: center;
+        tg.expand();  // Expands the app to full screen
+        
+        // Function to display Monetag Ads
+        function showAd() {
+            window.open("YOUR_MONETAG_DIRECT_LINK", "_blank");
+        }
+
+        // Function for Bonus Button
+        function showBonus() {
+            alert("Bonus Feature Coming Soon!");
+        }
+    </script>
+    <style>
+        body {
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
+            text-align: center;
+            background-color: #f4f4f4;
             padding: 20px;
         }
-        .container {
-            margin-top: 50px;
-        }
-        .btn {
+        button {
+            display: block;
+            width: 200px;
+            margin: 10px auto;
+            padding: 15px;
             background-color: #0088cc;
             color: white;
-            padding: 10px 20px;
             border: none;
-            border-radius: 5px;
             cursor: pointer;
-            font-size: 18px;
+        }
+        button:hover {
+            background-color: #005f99;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Welcome to My Telegram Mini App</h2>
-       button class="btn" onclick="showAd()">🔥 Get Your Bonus 🎁</button>
-        
-    </div>
-
-    <script>
-        function showAd() {
-           window.open("https://whoushex.top/4/9107012", "_blank");
-        }
-        
-        }
-    </script>
+    <h1>Welcome to MiniMonde007Bot</h1>
+    <p>Click the button below to see ads.</p>
+    
+    <button onclick="showAd()">Show Ad</button>
+    <button onclick="showBonus()">Bonus</button>
+    
 </body>
-  </html>
-  
+</html>
